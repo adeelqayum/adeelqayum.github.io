@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php include "inc/currentpage.inc"; ?>
+		<title>About - Adeel Qayum</title>
+		<link rel="stylesheet" href="styling.css">
+	</head>
+    
+	<body>
+        
+        <header>
+        <a href="index.php"><img src="images/logofullname.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="https://drive.google.com/file/d/1FEc-lnnSEZVCiYWy_LVlX9dMZdjdEWfI/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+                <div class="updatedblock" id="quoteblock">
+            <h2>Unanswered</h2>
+            <p>"Only a fool would try to place limits on the reach of science, which fumbles upward by trial and doubt."<br>
+                <a class="source" href="https://www.nytimes.com/2018/11/19/science/unsolved-mysteries.html" target="_blank">-Honestly, Some Questions Are Better Left Unanswered</a>
+            </p>
+        </div>
+        
+        <div class="biography">
+            <img src="images/bio.png">
+        </div>
+        
+        
+        <div class="footer">
+            <h3>CONTACT ME!</h3>
+            <div class="row">
+                <div class="column">
+                    <a href="https://www.linkedin.com/in/adeel-qayum/" target="_blank"><img src="images/linkedinlogo.png" alt="LinkedIn"></a>
+                </div>
+                <div class="column">
+                    <a href="https://github.com/adeelqayum" target="_blank"><img src="images/githublogo.png" alt="Github"></a>
+                </div>
+                <div class="column">
+                    <a href="mailto:aqayum97@gmail.com" target="_blank"><img src="images/maillogo.png" alt="E-Mail"></a>
+                </div>
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            $(function(){
+                $('a').each(function(){
+                    if ($(this).prop('href') == window.location.href) {
+                        $(this).addClass('active'); $(this).parents('li').addClass('active');
+                    }
+                });
+            });
+        </script>
+        
+	</body>
+</html>

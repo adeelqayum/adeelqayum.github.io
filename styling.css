@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600);
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+
+header h1 {
+    float: left;
+    margin-left: -225px;
+    /*TEXT*/
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header img {
+    width: 300x;
+    height: 235px;
+    margin-left: 70px;
+}
+
+/*NAV BAR*/
+
+nav {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav li a.active {
+   background-color: #143AD6;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    color:#143AD6;
+}
+
+
+@media all and (max-width: 245px) {
+  nav ul > li {
+    flex-basis: 100%;
+  }
+}
+
+
+/*UPDATED BLOCKS*/
+
+.updatedblock {
+    margin: 0 auto;
+    /*background-color: #eee;*/
+    background-image: url(images/backgroundimage.png);
+    padding-top: 50px;
+    /*parallax effect*/
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.updatedblock h2 {
+    color: #fff;
+    font-family: 'Noto Serif';
+	font-size: 300px;
+	font-weight: 700;
+	line-height: 138px;
+    margin-top: 25px;
+	margin-left: 15%;
+    margin-bottom: -5%;
+}
+
+.updatedblock p {
+    color: #333;
+    font-family: 'Noto Serif';
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 54px;
+    margin-left: 25%;
+}
+
+.updatedblock .source {
+    color: #143AD6;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 3px;
+	margin-left: -6px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.interests h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.flex-container {
+  flex-direction:row;
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap; 
+  justify-content: center;
+}
+
+.flex-container img {
+  margin: 5%;
+  order: 1;
+}
+
+.biography {
+
+}
+
+.biography img {
+    width: 100%;
+}
+
+.resume {
+    margin-left: 350px;
+    border: 1px solid black;
+}
+
+.footer {
+    margin: 0 auto;
+    /*background-color: #eee;*/
+    background-image: url(images/backgroundimage.png);
+    /*parallax effect*/
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer .row {
+  display: flex;
+    margin-left: 43%;
+}
+
+.footer .column {
+  margin-left: 10px;
+  padding: 5px;
+    height: 100%;
+}
