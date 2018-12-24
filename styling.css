@@ -167,28 +167,96 @@ nav li a:hover {
 	text-transform: uppercase;
 }
 
-.interests h3 {
+.aboutmeblock {
+    margin: 0 auto;
+    /*background-color: #eee;*/
+    background-image: url(images/woodenbackground.jpg);
+    padding-top: 50px;
+    height: 400px;
+    /*parallax effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+.projects {
+    margin-bottom: 5%;
+    overflow: auto;
+}
+
+.projects h3 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
 }
 
-.flex-container {
-  flex-direction:row;
-  display: flex;
-  align-content: center;
-  flex-flow: row wrap; 
-  justify-content: center;
+.location {
+    background-color: #D5D8DC;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+    overflow:auto; 
+    margin-top: 5%;
 }
 
-.flex-container img {
-  margin: 5%;
-  order: 1;
+.locationimage {
+    float:left;
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.biography {
+.locationdescription {
+    margin-left: 30%;
+    font-size: 26px;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
 
+.locationimage:hover {
+    content:url("images/locationphoto2.png")
+}
+
+.ecmo {
+    background-color: #D5D8DC;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 25px;
+    overflow:auto; 
+    margin-top: 5%;
+}
+
+
+.ecmoappimage {
+    float:left;
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+.ecmoappdescription {
+    margin-left: 10%;
+    font-size: 26px;
+    margin-top: 15%;
+    margin-right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 .biography img {
@@ -226,6 +294,37 @@ nav li a:hover {
 }
 
 .footer .column {
+  margin-left: 10px;
+  padding: 5px;
+    height: 100%;
+}
+
+.footerabout {
+    margin: 0 auto;
+    /*background-color: #eee;*/
+    background-image: url(images/woodbackground.jpg);
+    /*parallax effect*/
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.footerabout h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footerabout .row {
+  display: flex;
+    margin-left: 41%;
+}
+
+.footerabout .column {
   margin-left: 10px;
   padding: 5px;
     height: 100%;
