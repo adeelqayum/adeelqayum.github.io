@@ -200,7 +200,7 @@ nav li a:hover {
 }
 
 .location {
-    background-color: #D5D8DC;
+    background-color: #9DADBF;
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 25px;
@@ -222,6 +222,7 @@ nav li a:hover {
     margin-right: 10%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    color: white;
 }
 
 .locationimage:hover {
@@ -229,7 +230,7 @@ nav li a:hover {
 }
 
 .ecmo {
-    background-color: #D5D8DC;
+    background-color: #9DADBF;
     margin-left: 15%;
     margin-right: 15%;
     border-radius: 25px;
@@ -257,6 +258,7 @@ nav li a:hover {
     margin-right: 10%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    color: white;
 }
 
 .biography img {
