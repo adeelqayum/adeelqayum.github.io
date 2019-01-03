@@ -215,6 +215,8 @@ nav li a:hover {
     display: block;
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 40%;
+    height: auto;
 }
 
 .locationdescription {
@@ -332,4 +334,9 @@ nav li a:hover {
   margin-left: 10px;
   padding: 5px;
     height: 100%;
+}
+
+.footerimage {
+    width: 50%;
+    height: auto;
 }
